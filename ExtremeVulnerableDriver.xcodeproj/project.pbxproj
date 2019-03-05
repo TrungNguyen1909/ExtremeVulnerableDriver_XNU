@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		879FFE3B222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */; };
+		879FFE3C222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */; };
+		87B7176F222A653100309CE1 /* ExtremeVulnerableDriver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87B7176E222A653100309CE1 /* ExtremeVulnerableDriver.hpp */; };
+		87B71771222A653100309CE1 /* ExtremeVulnerableDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B71770222A653100309CE1 /* ExtremeVulnerableDriver.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtremeVulnerableDriverUserClient.cpp; sourceTree = "<group>"; };
+		879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtremeVulnerableDriverUserClient.hpp; sourceTree = "<group>"; };
+		87B7176B222A653100309CE1 /* ExtremeVulnerableDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremeVulnerableDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B7176E222A653100309CE1 /* ExtremeVulnerableDriver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtremeVulnerableDriver.hpp; sourceTree = "<group>"; };
+		87B71770222A653100309CE1 /* ExtremeVulnerableDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtremeVulnerableDriver.cpp; sourceTree = "<group>"; };
+		87B71772222A653100309CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87B71768222A653100309CE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87B71761222A653100309CE1 = {
+			isa = PBXGroup;
+			children = (
+				87B7176D222A653100309CE1 /* ExtremeVulnerableDriver */,
+				87B7176C222A653100309CE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87B7176C222A653100309CE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B7176B222A653100309CE1 /* ExtremeVulnerableDriver.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87B7176D222A653100309CE1 /* ExtremeVulnerableDriver */ = {
+			isa = PBXGroup;
+			children = (
+				87B7176E222A653100309CE1 /* ExtremeVulnerableDriver.hpp */,
+				87B71770222A653100309CE1 /* ExtremeVulnerableDriver.cpp */,
+				87B71772222A653100309CE1 /* Info.plist */,
+				879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */,
+				879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */,
+			);
+			path = ExtremeVulnerableDriver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87B71766222A653100309CE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B7176F222A653100309CE1 /* ExtremeVulnerableDriver.hpp in Headers */,
+				879FFE3C222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87B7176A222A653100309CE1 /* ExtremeVulnerableDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B71775222A653100309CE1 /* Build configuration list for PBXNativeTarget "ExtremeVulnerableDriver" */;
+			buildPhases = (
+				87B71766222A653100309CE1 /* Headers */,
+				87B71767222A653100309CE1 /* Sources */,
+				87B71768222A653100309CE1 /* Frameworks */,
+				87B71769222A653100309CE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtremeVulnerableDriver;
+			productName = ExtremeVulnerableDriver;
+			productReference = 87B7176B222A653100309CE1 /* ExtremeVulnerableDriver.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87B71762222A653100309CE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Trung Nguyen";
+				TargetAttributes = {
+					87B7176A222A653100309CE1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 87B71765222A653100309CE1 /* Build configuration list for PBXProject "ExtremeVulnerableDriver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87B71761222A653100309CE1;
+			productRefGroup = 87B7176C222A653100309CE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87B7176A222A653100309CE1 /* ExtremeVulnerableDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87B71769222A653100309CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87B71767222A653100309CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879FFE3B222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp in Sources */,
+				87B71771222A653100309CE1 /* ExtremeVulnerableDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87B71773222A653100309CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		87B71774222A653100309CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		87B71776222A653100309CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = G5JF4APF6Y;
+				INFOPLIST_FILE = ExtremeVulnerableDriver/Info.plist;
+				MODULE_NAME = com.ntrung03.ExtremeVulnerableDriver;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntrung03.ExtremeVulnerableDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		87B71777222A653100309CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = G5JF4APF6Y;
+				INFOPLIST_FILE = ExtremeVulnerableDriver/Info.plist;
+				MODULE_NAME = com.ntrung03.ExtremeVulnerableDriver;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntrung03.ExtremeVulnerableDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87B71765222A653100309CE1 /* Build configuration list for PBXProject "ExtremeVulnerableDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B71773222A653100309CE1 /* Debug */,
+				87B71774222A653100309CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B71775222A653100309CE1 /* Build configuration list for PBXNativeTarget "ExtremeVulnerableDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B71776222A653100309CE1 /* Debug */,
+				87B71777222A653100309CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87B71762222A653100309CE1 /* Project object */;
+}
