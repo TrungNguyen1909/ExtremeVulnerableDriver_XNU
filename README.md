@@ -1,6 +1,6 @@
 # ExtremeVulnerableDriver
 
-This is an XNU version for the HackSysExtremeVulnerableDriver
+This is a XNU (IOKit) kernel extension inspired by the `hacksysteam/HackSysExtremeVulnerableDriver` written by me
 
 Currently, there is only an buffer overflow demo.
 
