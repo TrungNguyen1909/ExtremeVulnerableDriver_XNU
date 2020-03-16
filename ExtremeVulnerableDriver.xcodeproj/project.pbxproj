@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87603124241E589700F40C0C /* ExtremeVulnerableShmemDev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87603122241E589700F40C0C /* ExtremeVulnerableShmemDev.cpp */; };
+		87603125241E589700F40C0C /* ExtremeVulnerableShmemDev.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87603123241E589700F40C0C /* ExtremeVulnerableShmemDev.hpp */; };
 		879FFE3B222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */; };
 		879FFE3C222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */; };
 		87B7176F222A653100309CE1 /* ExtremeVulnerableDriver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87B7176E222A653100309CE1 /* ExtremeVulnerableDriver.hpp */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87603122241E589700F40C0C /* ExtremeVulnerableShmemDev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtremeVulnerableShmemDev.cpp; sourceTree = "<group>"; };
+		87603123241E589700F40C0C /* ExtremeVulnerableShmemDev.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtremeVulnerableShmemDev.hpp; sourceTree = "<group>"; };
 		879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtremeVulnerableDriverUserClient.cpp; sourceTree = "<group>"; };
 		879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtremeVulnerableDriverUserClient.hpp; sourceTree = "<group>"; };
 		87B7176B222A653100309CE1 /* ExtremeVulnerableDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtremeVulnerableDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,8 @@
 				87B71772222A653100309CE1 /* Info.plist */,
 				879FFE39222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp */,
 				879FFE3A222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp */,
+				87603122241E589700F40C0C /* ExtremeVulnerableShmemDev.cpp */,
+				87603123241E589700F40C0C /* ExtremeVulnerableShmemDev.hpp */,
 			);
 			path = ExtremeVulnerableDriver;
 			sourceTree = "<group>";
@@ -69,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B7176F222A653100309CE1 /* ExtremeVulnerableDriver.hpp in Headers */,
+				87603125241E589700F40C0C /* ExtremeVulnerableShmemDev.hpp in Headers */,
 				879FFE3C222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				879FFE3B222A854D00FBBD13 /* ExtremeVulnerableDriverUserClient.cpp in Sources */,
+				87603124241E589700F40C0C /* ExtremeVulnerableShmemDev.cpp in Sources */,
 				87B71771222A653100309CE1 /* ExtremeVulnerableDriver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,23 +1,40 @@
 # ExtremeVulnerableDriver
 
-This is a XNU (IOKit) kernel extension inspired by the `hacksysteam/HackSysExtremeVulnerableDriver` written by me
+This is a XNU (IOKit) kernel extension inspired by the `hacksysteam/HackSysExtremeVulnerableDriver` written by me (TrungNguyen1909)
 
-Currently, there is only an buffer overflow demo.
+**ExtremeVulnerableDriver** is intentionally vulnerable XNU driver developed for security enthusiasts to learn and polish their exploitation skills at Kernel level.
 
-The task is simple: Elevate to root. Period
+## Types of vulnerabilities
 
-The solution for this problem was written for 
+- Stack buffer overflow (based on matesCTF's KSMASH Linux kernel Exploit challenge)
 
-```
-Darwin Kernel Version 18.2.0: root:xnu-4903.231.4~2/RELEASE_X86_64 x86_64
-```
+- Heap buffer overflow (stereo-typed version of IOAccelerationFamilyV2. replica of CVE-2020-3837 bug)
 
-But everything will be the same on other XNU version, just update the offset.
+- The one I accidentially made and haven't noticed yet.
 
-I don't think I will release any other demo because as long as we don't touch the Mach subsystem, It should be the _same_ with `invictus-0x90/vulnerable_linux_driver`
+## Task
 
-## Exploit Reference
+The task is simple: Elevate to root. TFP0 if possible.
 
-[saelo's IPwnKit Solution](https://gist.github.com/saelo/0a85f22c8a02f3a314661edd715900d3)
+## Solutions
 
-[Brandon Azad CVE-2016-1828 writeup](https://bazad.github.io/2016/05/mac-os-x-use-after-free/#building-the-rop-stack)
+Solutions for vulnerabilties are put inside [exploits](./exploits) folder. Please include the vulnerability's name you exploited, the macOS build version and first 6 characters of the sha1 of the driver's commit that you worked on in the file name.
+
+This is because offsets may be subjected to changes between macOS or driver version.
+
+## Contributions
+
+Are welcome (including driver code and exploits)
+
+### License
+
+This work is licensed under a [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+### Disclaimer
+
+This product is damn vulnerable. **Never install it on a production machine**, as it will be compromised. It is recommended to use a virtual machine.
+
+We do not take responsibility for the way in which any one uses this application (ExtremeVulnerableDriver). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing ExtremeVulnerableDriver on to production machine. If your machine is compromised via an installation of ExtremeVulnerableDriver, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it.
+
+---
+Happy pwning~
