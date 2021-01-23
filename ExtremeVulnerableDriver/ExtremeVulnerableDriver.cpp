@@ -90,18 +90,16 @@ IOReturn ExtremeVulnerableDriver::processData(struct ExtremeVulnerableSubmitData
 }
 
 IOReturn ExtremeVulnerableDriver::processCommand(struct ExtremeVulnerableKernelCommand *cmd, struct ExtremeVulnerableKernelCommand *end){
-    uint32_t cmdType = cmd->type;
-    mach_vm_size_t resSize = (mach_vm_address_t)end - (mach_vm_address_t)cmd;
-    switch (cmdType) {
+    if((mach_vm_address_t)end - (mach_vm_address_t)cmd < sizeof(struct ExtremeVulnerableKernelCommand)){
+        return kIOReturnBadArgument;
+    }
+    switch (cmd->type) {
         case 1:
             IOLog("Hello from ExtremeVulnerableDriver::processCommand\n");
             break;
         case 2:
-            if(resSize<=7){
-                return kIOReturnBadArgument;
-            }
-            cmd->result = mach_absolute_time();
-        default:
+            ExtremeVulnerableKernelCommandWithResult* cmdWithResult = (ExtremeVulnerableKernelCommandWithResult*)cmd;
+            cmdWithResult->result = mach_absolute_time();
             break;
     }
     return kIOReturnSuccess;
@@ -111,10 +109,10 @@ IOReturn ExtremeVulnerableDriver::processCommands(struct ExtremeVulnerableKernel
     if(cmd < end){
         struct ExtremeVulnerableKernelCommand *curCmd = cmd;
         while(1){
-            if((mach_vm_address_t)&curCmd->result > (mach_vm_address_t)end){
+            if((mach_vm_address_t)curCmd+sizeof(struct ExtremeVulnerableKernelCommand) > (mach_vm_address_t)end){
                 return kIOReturnSuccess;
             }
-            if(curCmd->size < 8 || (mach_vm_address_t)curCmd+curCmd->size > (mach_vm_address_t)end){
+            if(curCmd->size < sizeof(struct ExtremeVulnerableKernelCommand) || (mach_vm_address_t)curCmd+curCmd->size > (mach_vm_address_t)end){
                 return kIOReturnSuccess;
             }
             this->processCommand(curCmd, curCmd+curCmd->size);

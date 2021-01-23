@@ -6,6 +6,9 @@
 struct ExtremeVulnerableKernelCommand{
     uint32_t type;
     uint32_t size;
+};
+struct ExtremeVulnerableKernelCommandWithResult{
+    struct ExtremeVulnerableKernelCommand command;
     uint64_t result;
 };
 struct ExtremeVulnerableSubmitData {
